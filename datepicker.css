@@ -1,5 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 table {
-    border: black solid 1px;
+    border: rgb(255, 0, 0) solid 1px;
 }
 td.not-in-month{
     background-color: transparent;
@@ -14,7 +23,7 @@ td {
     text-align: center;
     width: 25px;
     height: 25px;
-    background-color: whitesmoke;
+    background-color: rgba(20, 109, 41, 0.493);
     margin: 1px;
 }
 
