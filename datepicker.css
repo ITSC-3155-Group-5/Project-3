@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+table {
+    border: rgb(255, 0, 0) solid 1px;
+}
+td.not-in-month{
+    background-color: transparent;
+}
+td.not-in-month:hover {
+    cursor: default;
+    background-color: transparent;
+    color: black;
+}
+
+td {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(20, 109, 41, 0.493);
+    margin: 1px;
+}
+
+td:hover, .month-selector:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: goldenrod;
+}
