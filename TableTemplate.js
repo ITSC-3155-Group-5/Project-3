@@ -5,7 +5,7 @@ class TableTemplate {
         console.log(columnName);
         const table = document.getElementById(id);
         if (columnName === undefined) {
-            const templateProcessor = new templateProcessor(table.innerHTML);
+            const templateProcessor = new TemplateProcessor(table.innerHTML);
             table.innerHTML = templateProcessor.fillIn(dictionary);
         } else {
             const headerRow = table.rows[0];
