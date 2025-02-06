@@ -3,12 +3,30 @@
     flex-direction: column;
     align-items: center;
 }
+@keyframes pulsate {
+    100% {
+        box-shadow:
+            0 0 7px #A6FFA1,
+            0 0 14px #A6FFA1,
+            0 0 17px #A6FFA1,
+            0 0 24px #A6FFA1,
+            0 0 34px #A6FFA1;
+    }
+
+}
+
+#datepicker1, #datepicker2 {
+    box-shadow: 0 0 3px 3px #A6FFA1;
+    animation: pulsate 1.5s infinite alternate;
+}
 body{
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #23022E;
+    color: white;
 }
 table {
-    border: rgb(255, 0, 0) solid 1px;
+    border: rgba(110, 187, 107, 0.151) solid 1px;
 }
 td.not-in-month{
     background-color: transparent;
@@ -23,12 +41,12 @@ td {
     text-align: center;
     width: 25px;
     height: 25px;
-    background-color: rgba(20, 109, 41, 0.493);
+    background-color: #B5D2CB;
     margin: 1px;
 }
 
 td:hover, .month-selector:hover {
     cursor: pointer;
-    background-color: yellow;
-    color: goldenrod;
+    background-color: #A09EBB;
+    color: #BFFFBC;
 }
